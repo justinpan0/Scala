@@ -1,0 +1,2 @@
+# import util.Random
+def random_name_generator() = BigInt.apply(100, Random).toString(36)
