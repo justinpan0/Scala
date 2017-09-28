@@ -19,3 +19,6 @@
 9. With a recursive function, you must sepcify the return type: 
   def fac(n: Int): Int = if(n <= 0) 1 else n*fac(n-1)
   
+10. lazy is halfway between val and def. val evaluates as soon as the object is defined; lazy evaluate the first time the object is used;
+def evaluates every time the object is used.
+
