@@ -2,3 +2,20 @@ def countdown(n: Int) {
   for(i <- n to 0 by -1)
     println(i)
 }
+
+------------------
+
+def unicodeProduct(str: String) {
+  var x = 1;
+  for(i <- 0 to str.length-1) x = str(i).toInt
+  x
+}
+
+def product(s: String) = { s.foldLeft(1: BigInt)((a, b) => a*b)}
+
+def pow(x: Int, n: Int) : Int = {
+  if(n==0) 1;
+  else if(n < 0) 1/pow(x, -n);
+  else if(n%2 == 1) x * pow(x, n-1);
+  else pow(x,n/2) * pow(x,n/2);
+}
